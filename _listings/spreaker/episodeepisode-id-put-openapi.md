@@ -25,6 +25,7 @@ paths:
         200:
           description: OK
       tags:
+      - Podcasts
       - Categories
   /episode/<episode_id>/image:
     put:
@@ -43,6 +44,7 @@ paths:
         200:
           description: OK
       tags:
+      - Podcasts
       - Change
       - Episode
       - Image
@@ -60,6 +62,7 @@ paths:
         200:
           description: OK
       tags:
+      - Podcasts
       - Episode
     get:
       summary: Get Episode
@@ -74,6 +77,7 @@ paths:
         200:
           description: OK
       tags:
+      - Podcasts
       - Episode
     put:
       summary: Edit Episode
@@ -100,6 +104,7 @@ paths:
         200:
           description: OK
       tags:
+      - Podcasts
       - Edit
       - Episode
 x-streamrank:

@@ -1,4 +1,3 @@
----
 swagger: "2.0"
 x-collection-name: Spreaker
 x-complete: 1
@@ -24,6 +23,7 @@ paths:
         200:
           description: OK
       tags:
+      - Podcasts
       - Categories
   /episode/<episode_id>/image:
     put:
@@ -42,6 +42,7 @@ paths:
         200:
           description: OK
       tags:
+      - Podcasts
       - Change
       - Episode
       - Image
@@ -59,6 +60,7 @@ paths:
         200:
           description: OK
       tags:
+      - Podcasts
       - Episode
     get:
       summary: Get Episode
@@ -73,6 +75,7 @@ paths:
         200:
           description: OK
       tags:
+      - Podcasts
       - Episode
     put:
       summary: Edit Episode
@@ -99,6 +102,7 @@ paths:
         200:
           description: OK
       tags:
+      - Podcasts
       - Edit
       - Episode
   /episode/{episode_id}/media:
@@ -115,6 +119,7 @@ paths:
         200:
           description: OK
       tags:
+      - Podcasts
       - Episode
       - Media
       - List
@@ -132,6 +137,7 @@ paths:
         200:
           description: OK
       tags:
+      - Podcasts
       - Episode
       - Streams
   /episode/{episode_id}/streams/rtmp:
@@ -148,6 +154,7 @@ paths:
         200:
           description: OK
       tags:
+      - Podcasts
       - Episode
       - Streams
   /episodes/live:
@@ -164,6 +171,7 @@ paths:
         200:
           description: OK
       tags:
+      - Podcasts
       - Live
       - Episodes
   /explore/{category_id}:
@@ -186,6 +194,7 @@ paths:
         200:
           description: OK
       tags:
+      - Podcasts
       - Explore
       - Category
       - Items
@@ -216,6 +225,7 @@ paths:
         200:
           description: OK
       tags:
+      - Podcasts
       - Media
   /library/{user_id}/effects/owned:
     get:
@@ -237,6 +247,7 @@ paths:
         200:
           description: OK
       tags:
+      - Podcasts
       - Owned
       - Media
   /library/{user_id}/jingles/owned:
@@ -259,6 +270,7 @@ paths:
         200:
           description: OK
       tags:
+      - Podcasts
       - Owned
       - Media
   /library/{user_id}/loops/owned:
@@ -281,6 +293,7 @@ paths:
         200:
           description: OK
       tags:
+      - Podcasts
       - Owned
       - Media
   /library/{user_id}/songs/owned:
@@ -303,6 +316,7 @@ paths:
         200:
           description: OK
       tags:
+      - Podcasts
       - Owned
       - Media
   /library/{user_id}/soundtracks/owned:
@@ -325,6 +339,7 @@ paths:
         200:
           description: OK
       tags:
+      - Podcasts
       - Owned
       - Media
   /lives/top:
@@ -341,6 +356,7 @@ paths:
         200:
           description: OK
       tags:
+      - Podcasts
       - Top
       - Live
       - Episodes
@@ -354,6 +370,7 @@ paths:
         200:
           description: OK
       tags:
+      - Podcasts
       - Media
   /search/{query}:
     get:
@@ -369,6 +386,7 @@ paths:
         200:
           description: OK
       tags:
+      - Podcasts
       - Search
       - Users
       - ""
@@ -388,6 +406,7 @@ paths:
         200:
           description: OK
       tags:
+      - Podcasts
       - Search
       - Shows
   /show/{show_id}:
@@ -432,6 +451,7 @@ paths:
         200:
           description: OK
       tags:
+      - Podcasts
       - Dele
       - Show
     get:
@@ -447,6 +467,7 @@ paths:
         200:
           description: OK
       tags:
+      - Podcasts
       - Show
     put:
       summary: Edit Show
@@ -457,6 +478,7 @@ paths:
         200:
           description: OK
       tags:
+      - Podcasts
       - Edit
       - Show
   /show/{show_id}/episodes:
@@ -470,6 +492,7 @@ paths:
         200:
           description: OK
       tags:
+      - Podcasts
       - Show
       - Episodes
     post:
@@ -513,6 +536,7 @@ paths:
         200:
           description: OK
       tags:
+      - Podcasts
       - Podcast
   /show/{show_id}/episodes/all:
     get:
@@ -529,6 +553,7 @@ paths:
         200:
           description: OK
       tags:
+      - Podcasts
       - Show
       - Episodes
   /shows:
@@ -545,6 +570,7 @@ paths:
         200:
           description: OK
       tags:
+      - Podcasts
       - Show
   /user/{followed_id}/fans:
     get:
@@ -559,6 +585,7 @@ paths:
         200:
           description: OK
       tags:
+      - Podcasts
       - List
       - Of
       - Followers
@@ -576,6 +603,7 @@ paths:
         200:
           description: OK
       tags:
+      - Podcasts
       - Follow
       - User
   /user/{followed_id}/fans/{follower_id}:
@@ -593,6 +621,7 @@ paths:
         200:
           description: OK
       tags:
+      - Podcasts
       - Unfollow
       - User
   /user/{follower_id}/users/fan:
@@ -608,6 +637,7 @@ paths:
         200:
           description: OK
       tags:
+      - Podcasts
       - List
       - Of
       - Following
@@ -625,6 +655,7 @@ paths:
         200:
           description: OK
       tags:
+      - Podcasts
       - User
     put:
       summary: Edit User
@@ -651,6 +682,7 @@ paths:
         200:
           description: OK
       tags:
+      - Podcasts
       - Edit
       - User
   /user/{user_id}/actions:
@@ -692,6 +724,7 @@ paths:
         200:
           description: OK
       tags:
+      - Podcasts
       - User
       - Actions
   /user/{user_id}/actions/facebook:
@@ -732,6 +765,7 @@ paths:
         200:
           description: OK
       tags:
+      - Podcasts
       - Facebook
       - Settings
   /user/{user_id}/actions/twitter:
@@ -764,6 +798,7 @@ paths:
         200:
           description: OK
       tags:
+      - Podcasts
       - Twitter
       - Settings
   /user/{user_id}/device/{token}:
@@ -783,6 +818,7 @@ paths:
         200:
           description: OK
       tags:
+      - Podcasts
       - Device
   /user/{user_id}/devices:
     get:
@@ -807,6 +843,7 @@ paths:
         200:
           description: OK
       tags:
+      - Podcasts
       - Device
   /user/{user_id}/episodes:
     get:
@@ -819,6 +856,7 @@ paths:
         200:
           description: OK
       tags:
+      - Podcasts
       - User
       - Episodes
   /user/{user_id}/image:
@@ -838,6 +876,7 @@ paths:
         200:
           description: OK
       tags:
+      - Podcasts
       - Change
       - User
       - Profile
@@ -857,6 +896,7 @@ paths:
         200:
           description: OK
       tags:
+      - Podcasts
       - Upload
       - Image
   /user/{user_id}/lives/fan:
@@ -873,6 +913,7 @@ paths:
         200:
           description: OK
       tags:
+      - Podcasts
       - Favorite
       - Live
       - Episodes
@@ -898,6 +939,7 @@ paths:
         200:
           description: OK
       tags:
+      - Podcasts
       - Newsfeed
   /user/{user_id}/shows/author:
     get:
@@ -913,6 +955,7 @@ paths:
         200:
           description: OK
       tags:
+      - Podcasts
       - GEt
       - Shows
       - Author
@@ -933,6 +976,7 @@ paths:
         200:
           description: OK
       tags:
+      - Podcasts
       - Favorite
       - Shows
   /users/search/{query}:
@@ -949,6 +993,7 @@ paths:
         200:
           description: OK
       tags:
+      - Podcasts
       - Search
       - Users
   /whoami:
@@ -961,6 +1006,7 @@ paths:
         200:
           description: OK
       tags:
+      - Podcasts
       - Authenticated
       - User
   show/{show_id}/image:
@@ -980,7 +1026,7 @@ paths:
         200:
           description: OK
       tags:
+      - Podcasts
       - Change
       - Show
       - Image
----

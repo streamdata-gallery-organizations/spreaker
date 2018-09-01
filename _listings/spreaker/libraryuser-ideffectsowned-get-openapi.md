@@ -25,6 +25,7 @@ paths:
         200:
           description: OK
       tags:
+      - Podcasts
       - Categories
   /episode/<episode_id>/image:
     put:
@@ -43,6 +44,7 @@ paths:
         200:
           description: OK
       tags:
+      - Podcasts
       - Change
       - Episode
       - Image
@@ -60,6 +62,7 @@ paths:
         200:
           description: OK
       tags:
+      - Podcasts
       - Episode
     get:
       summary: Get Episode
@@ -74,6 +77,7 @@ paths:
         200:
           description: OK
       tags:
+      - Podcasts
       - Episode
     put:
       summary: Edit Episode
@@ -100,6 +104,7 @@ paths:
         200:
           description: OK
       tags:
+      - Podcasts
       - Edit
       - Episode
   /episode/{episode_id}/media:
@@ -116,6 +121,7 @@ paths:
         200:
           description: OK
       tags:
+      - Podcasts
       - Episode
       - Media
       - List
@@ -133,6 +139,7 @@ paths:
         200:
           description: OK
       tags:
+      - Podcasts
       - Episode
       - Streams
   /episode/{episode_id}/streams/rtmp:
@@ -149,6 +156,7 @@ paths:
         200:
           description: OK
       tags:
+      - Podcasts
       - Episode
       - Streams
   /episodes/live:
@@ -165,6 +173,7 @@ paths:
         200:
           description: OK
       tags:
+      - Podcasts
       - Live
       - Episodes
   /explore/{category_id}:
@@ -187,6 +196,7 @@ paths:
         200:
           description: OK
       tags:
+      - Podcasts
       - Explore
       - Category
       - Items
@@ -217,6 +227,7 @@ paths:
         200:
           description: OK
       tags:
+      - Podcasts
       - Media
   /library/{user_id}/effects/owned:
     get:
@@ -238,6 +249,7 @@ paths:
         200:
           description: OK
       tags:
+      - Podcasts
       - Owned
       - Media
 x-streamrank:

@@ -25,6 +25,7 @@ paths:
         200:
           description: OK
       tags:
+      - Podcasts
       - Categories
 x-streamrank:
   polling_total_time_average: 0

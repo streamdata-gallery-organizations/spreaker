@@ -25,6 +25,7 @@ paths:
         200:
           description: OK
       tags:
+      - Podcasts
       - Categories
   /episode/<episode_id>/image:
     put:
@@ -43,6 +44,7 @@ paths:
         200:
           description: OK
       tags:
+      - Podcasts
       - Change
       - Episode
       - Image
